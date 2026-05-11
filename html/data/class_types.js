@@ -11,7 +11,7 @@ class Type {
     toString() {
         let string = this._name + " : ";
         for ( const [key, value] of Object.entries(this._listEffectiveness) ) {
-            string += key + " = [" + value + "], ";
+            string += `${key} = [${value}], `
         };
         return string;
     }
@@ -22,6 +22,12 @@ class Type {
         }
         for ( const [key, value] of Object.entries(type_effectiveness[this._name]) ) {
             this._listEffectiveness[value].push(key);
+        }
+    }
+
+    static fill_types() {
+        for ( const [key, value] of Object.entries(type_effectiveness) ){
+            Type.all_types.push( new Type(`${key}`) );
         }
     }
 
