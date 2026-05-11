@@ -1,6 +1,6 @@
 class Attack {
 
-    static all_attacks = Array();
+    static all_attacks = new Array();
 
     constructor(id, name, type, power, duration){
         this.id = id;
@@ -16,6 +16,7 @@ class Attack {
     }
 
     fill_attacks(){
+        
         // Fast moves
         fast_moves.forEach(m => {
             const atk = new Attack(
