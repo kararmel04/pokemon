@@ -3,16 +3,17 @@ class Attack {
     static all_attacks = new Array();
 
     constructor(id, name, type, power, duration){
-        this.id = id;
-        this.name = name;
-        this.type = type;
-        this.power = power;
-        this.duration = duration;
+        this._id = id;
+        this._name = name;
+        this._type = type;
+        this._power = power;
+        this._duration = duration;
+        this.fill_attacks();
     }
 
 
     toString() {
-        return `${this.name} : #${this.id}, ${this.type}, ${this.power}, ${this.duration}ms`;
+        return `${this._name} : #${this._id}, ${this._type}, ${this._power}, ${this._duration}ms`;
     }
 
     fill_attacks(){
