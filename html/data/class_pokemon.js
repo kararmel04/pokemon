@@ -9,6 +9,6 @@ class Pokemon {
     }
 
     toString(){
-        return `${name} :  #${id}, ${types}, ${sta}, ${atk}, ${def}, ${fast}, ${charged}`;
+        return `${name} :  #${id}, ${types}, ${sta}, ${atk}, ${def}, Rapides = ${fast}, Chargées = ${charged}`;
     }
 }
