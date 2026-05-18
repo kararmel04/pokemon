@@ -8,7 +8,6 @@ class Attack {
         this._type = type;
         this._power = power;
         this._duration = duration;
-        this.fill_attacks();
     }
 
 
