@@ -4,7 +4,6 @@ class Type {
 
     constructor(newName) {
         this._name = newName;
-        this._listEffectiveness = new Object();
         this.fill_effectiveness();
     }
 
@@ -17,6 +16,7 @@ class Type {
     }
 
     fill_effectiveness() {
+        this._listEffectiveness = new Object();
         for ( const [key, value] of Object.entries(type_effectiveness[this._name]) ) {
             this._listEffectiveness[value] = new Array();
         }

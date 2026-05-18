@@ -16,7 +16,7 @@ class Attack {
         return `${this._name} : #${this._id}, ${this._type}, ${this._power}, ${this._duration}ms`;
     }
 
-    fill_attacks(){
+    static fill_attacks(){
         
         // Fast moves
         fast_moves.forEach(m => {
