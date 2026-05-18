@@ -12,6 +12,27 @@
         <script src="../test/test.js"></script>
     </head>
     <body>
+        <div class="filtres">
+            <strong><p>Filtres :</p></strong>
+            <div class="type">
+                <label for="types">Type :</label>
+                <select name="types" id="type">
+                    <option value="-">-</option>
+                    <option value="Water">Attaque 1</option>
+                    <option value="Insect">Attaque 2</option>
+                </select>
+            </div>
+            <div class="atk">
+                <label for="Attaques Rapides">Attaque :</label>
+                <select name="Attaques Rapides" id="fast">
+                    <option value="-">-</option>
+                    <option value="Attack 1">Attaque 1</option>
+                    <option value="Attack 2">Attaque 2</option>
+                </select>
+            </div>
+            <textarea id="name">Entrer un nom...</textarea>
+
+        </div>
         <table>
             <thead>
                 <th>Id</th>
@@ -26,7 +47,7 @@
             <tr class="hover">
                 <td>1</td>
                 <td>Bulbasaur</td>
-                <td>1</td>
+                <td>undefined</td>
                 <td>Normal</td>
                 <td>100</td>
                 <td>50</td>

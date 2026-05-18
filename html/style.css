@@ -1,9 +1,25 @@
 table, th, td {
-  border: 1px solid;
-  border-collapse: collapse;
-  text-align: center;
+    margin-top: 10px;
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
 }
 
 .hover:hover {
     background-color: coral;
+}
+
+.atk, .type {
+    display: flex;
+    flex-direction: column;
+}
+
+.filtres {
+    display: flex;
+    flex-direction: row;
+}
+
+#name {
+    width: 120px;
+    height: 30px;
 }
