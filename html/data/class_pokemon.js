@@ -20,6 +20,7 @@ class Pokemon {
     static fill_pokemons() {
         Pokemon.all_pokemons = new Array();
         for ( const [key, value] of Object.entries(pokemons) ) {
+            // si la forme du pokemon n'est pas normale on ne l'ajoute pas
             if( value['form'] == "Normal" ) {
                 Pokemon.all_pokemons.push(new Pokemon(value['pokemon_id']));
             }
