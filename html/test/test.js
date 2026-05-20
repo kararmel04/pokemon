@@ -42,9 +42,26 @@ function getAttacksByType(typeName){
 
 function sortPokemonsByTypeThenName(){
     let liste = new Array();
+    // lambda fonction qui reproduit le comportement
+    // de la fonction getPokemonByType 
+    let gPbT = (typeName) => {
+        let liste = new Array();
+        Pokemon.fill_pokemons();
+        Pokemon.all_pokemons.forEach(pokemon => {
+            if( pokemon._types.includes(typeName) ) {
+                liste.push(pokemon);
+            }
+        });
+        liste.sort();
+        liste.forEach(pokemon => {
+            console.log(` - ${pokemon.toString()}`);
+        });
+    }
     Pokemon.fill_pokemons();
+    console.log(`Liste des ${Pokemon.all_pokemons.length} pokémons triés par type puis par ordre alphabetique : `);
     Pokemon.getAllTypes().forEach(type => {
-        console.log(type);
+        // pour chaque type on affiche tous les pokémon de ce type par ordre alphabetic
+        gPbT(type._name);
     });
 }
 
