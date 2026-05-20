@@ -18,8 +18,11 @@ class Pokemon {
     }
 
     static fill_pokemons() {
+        Pokemon.all_pokemons = new Array();
         for ( const [key, value] of Object.entries(pokemons) ) {
-            Pokemon.all_pokemons.push(new Pokemon(value['pokemon_id']))
+            if( value['form'] == "Normal" ) {
+                Pokemon.all_pokemons.push(new Pokemon(value['pokemon_id']));
+            }
         }
     }
 
