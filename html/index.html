@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
@@ -33,7 +34,10 @@
                     <option value="Attack 2">Attaque 2</option>
                 </select>
             </div>
-            <textarea id="name">Entrer un nom...</textarea>
+            <div class="nom">
+                <label for="name">Nom :</label>
+                <textarea id="name">Entrer un nom...</textarea>
+            </div>
 
         </div>
         <table>
@@ -47,16 +51,6 @@
                 <th>DEF</th>
                 <th>Image</th>
             </thead>
-            <tr class="hover">
-                <td>1</td>
-                <td>Bulbasaur</td>
-                <td>undefined</td>
-                <td>Normal</td>
-                <td>100</td>
-                <td>50</td>
-                <td>30</td>
-                <td><img src="webp/images/001.webp" alt="bulbasaur image" title="bulbasaur image" width="32px" height="32px"></td>
-            </tr>
         </table>
         <div class="pagination">
             <button id="prev-btn">Précédent</button>

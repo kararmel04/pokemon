@@ -30,10 +30,10 @@ tr:nth-child(even) {
 }
 
 .hover:hover {
-    background-color: #DEFEFF !important;
+    background-color: #DEFEFF;
 }
 
-.atk, .type {
+.atk, .type, .nom {
     display: flex;
     flex-direction: column;
 }

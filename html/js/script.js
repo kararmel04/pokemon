@@ -86,4 +86,13 @@ $(document).ready(function() {
 
     // Afficher la première page au chargement
     renderPage(currentPage);
+
+    // Trie la colonne cliquée par ordre alphabétique 
+    function sortCol(){
+        
+    }
+
+    $('th').on('click', function(){
+        sortCol();
+    });
 });
