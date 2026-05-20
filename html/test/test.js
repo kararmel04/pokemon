@@ -1,7 +1,3 @@
-console.log(`Liste des NN pokémons : `);
-console.log(` - <toString() du Nème pokémon>`);
-
-
 function getPokemonsByType(typeName){
     let liste = new Array();
     Pokemon.fill_pokemons();
